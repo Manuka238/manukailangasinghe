@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Creative Designer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YourName</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content scroll-animate animate-left">
+                <h1>Hi, I'm <span>Your Name</span></h1>
+                <p>Creative Designer specializing in social media posts, book covers, and logos</p>
+                <a href="#portfolio" class="btn">View My Work</a>
+            </div>
+            <div class="hero-image scroll-animate animate-right">
+                <img src="images/your-photo.jpg" alt="Your Name">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="scroll-animate animate-up">My Portfolio</h2>
+            <div class="filter-buttons scroll-animate animate-up delay-1">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="social">Social Media</button>
+                <button data-filter="book">Book Covers</button>
+                <button data-filter="logo">Logos</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item scroll-animate animate-up delay-2" data-category="social">
+                    <img src="images/work1.jpg" alt="Social Media Design">
+                    <div class="overlay">
+                        <h3>Social Media Campaign</h3>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item scroll-animate animate-up delay-3" data-category="book">
+                    <img src="images/work2.jpg" alt="Book Cover">
+                    <div class="overlay">
+                        <h3>Book Cover Design</h3>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item scroll-animate animate-up delay-4" data-category="logo">
+                    <img src="images/work3.jpg" alt="Logo Design">
+                    <div class="overlay">
+                        <h3>Brand Logo</h3>
+                        <a href="#" class="view-btn">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image scroll-animate animate-left">
+                <img src="images/about-photo.jpg" alt="About Me">
+            </div>
+            <div class="about-content scroll-animate animate-right">
+                <h2>About Me</h2>
+                <p>I'm a passionate designer with X years of experience creating visually stunning content for clients worldwide. I specialize in social media graphics, book cover design, and logo creation.</p>
+                <p>My approach combines creativity with strategy to deliver designs that not only look great but also achieve my clients' goals.</p>
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <ul class="stagger-parent">
+                        <li class="scroll-animate">Adobe Photoshop</li>
+                        <li class="scroll-animate">Adobe Illustrator</li>
+                        <li class="scroll-animate">Canva</li>
+                        <li class="scroll-animate">Brand Identity</li>
+                        <li class="scroll-animate">Typography</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="scroll-animate animate-up">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info scroll-animate animate-left">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form scroll-animate animate-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="scroll-animate animate-up">
+        <div class="container">
+            <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
